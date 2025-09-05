@@ -272,6 +272,8 @@ export class TripService {
     });
   }
 
+  
+
   async joinTrip({ token, user }: { token: string; user: User }) {
     const trip = await this.prisma.trip.findUnique({
       where: {
